@@ -1,0 +1,12 @@
+.works__item {
+  width: 100%;
+  height: 200px;
+  background: center center no-repeat/cover;
+  display: block;
+  
+  img {
+    opacity: 0;
+    display: block;
+    max-width: 100%;
+  }
+}

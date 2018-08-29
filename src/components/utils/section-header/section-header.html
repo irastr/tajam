@@ -1,0 +1,6 @@
+{% macro sectionHeader(title, subTitle, class) %}
+  <header class="section-header section-header--{{class}}">
+    <h2 class="section-header__title">{{ title }}</h2>
+    <h3 class="section-header__sub-title">{{ subTitle }}</h3>
+  </header>
+{% endmacro %}

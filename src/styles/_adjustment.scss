@@ -1,0 +1,83 @@
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+html {
+  font-size: $root-font + px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.maincontent {
+  flex: 1 0;
+}
+
+.btn {
+  background: transparent;
+  border: 1px solid $accent-color;
+  color: $accent-color;
+  text-transform: uppercase;
+  @include rem(16);
+  border-radius: 2px;
+  min-width: 120px;
+  transition:
+    color .1s ease-in-out,
+    border .1s ease-in-out;
+  
+  &:hover {
+    color: $text-white;
+    border-color: $text-white;
+  }
+}
+
+.overlay {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: $secondary-color, $alpha: .85);
+  }
+}
+
+.section {
+  padding: 70px 0;
+}
+
+.btn__submit {
+  &:hover {
+    color: #000;
+    border-color: #000;
+  }
+}
+
+.form__preloader {
+  margin-left: 15px;
+  color: $accent-color;
+  font-size: 20px;
+  display: none;
+}
+
+.animated {
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  } to {
+    transform: rotate(360deg);
+  }
+}

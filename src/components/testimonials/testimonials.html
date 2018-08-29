@@ -1,0 +1,79 @@
+{%
+  set slider = [
+    {
+      description: 'This is Photoshop\'s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.',
+      name: 'Jane',
+      position: 'CEO',
+      iconNav: 'img/face.png'
+    },
+    {
+      description: 'This is Photoshop\'s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.',
+      name: 'Jane',
+      position: 'CEO',
+      iconNav: 'img/face.png'
+    },
+    {
+      description: 'This is Photoshop\'s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.',
+      name: 'Jane',
+      position: 'CEO',
+      iconNav: 'img/face.png'
+    },
+    {
+      description: 'This is Photoshop\'s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.',
+      name: 'Jane',
+      position: 'CEO',
+      iconNav: 'img/face.png'
+    },
+    {
+      description: 'This is Photoshop\'s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.',
+      name: 'Jane',
+      position: 'CEO',
+      iconNav: 'img/face.png'
+    },
+    {
+      description: 'This is Photoshop\'s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.',
+      name: 'Jane',
+      position: 'CEO',
+      iconNav: 'img/face.png'
+    }
+  ]
+%}
+
+<div class="testimonials overlay section">
+  <div class="container">
+    <div class="testimonials__slider">
+      <ul class="testimonials__slider-list">
+        {% for item in slider %}
+        <li class="testimonials__slider-item">
+          <span class="testimonials__slider-quote">
+            <i class="fas fa-quote-left"></i>
+          </span>
+          <p class="testimonials__slider-descr">
+            {{ item.description }}
+          </p>
+          <div class="testimonials__person-wrap">
+            <h3 class="testimonials__person-name">{{ item.name }}</h3>
+            <span class="testimonials__person-position">{{ item.position }}</span>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="testimonials__slider-nav">
+      <button class="testimonials__slider-btn testimonials__slider-btn--prev">
+        <i class="fas fa-angle-left"></i>
+      </button>
+      <ul class="testimonials__slider-nav-list">
+        {% for item in slider %}
+        <li class="testimonials__slider-nav-item">
+          <img src="{{ item.iconNav }}">
+        </li>
+        {% endfor %}
+      </ul>
+      <button class="testimonials__slider-btn testimonials__slider-btn--next">
+        <i class="fas fa-angle-right"></i>
+      </button>
+    </div>
+  </div>
+</div>

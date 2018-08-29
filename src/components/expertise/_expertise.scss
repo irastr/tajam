@@ -1,0 +1,39 @@
+.expertise__card-wrap {
+  margin-top: 45px;
+}
+
+.expertise__card-wrap {
+  .col-xl-4:not(:nth-child(3n)) .expertise__item {
+    border-right: 1px solid #ebebeb;
+  }
+
+  .col-xl-4:nth-child(1) .expertise__item,
+  .col-xl-4:nth-child(2) .expertise__item,
+  .col-xl-4:nth-child(3) .expertise__item {
+    border-top: none;
+  }
+}
+
+.expertise__item {
+  padding: 30px 60px 35px;
+  text-align: center;
+  border-top: 1px solid #ebebeb;
+
+}
+
+.expertise__icon-wrap {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.expertise__title {
+  font-weight: 900;
+  @include rem(14);
+  color: $text-black;
+  margin-bottom: 20px;
+}
+
+.expertise__descr {
+  color: $text-black-opacity;
+  @include rem(14);
+}

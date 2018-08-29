@@ -1,0 +1,31 @@
+{%
+  set items = [
+    { title: 'Home', href: '#', active: true },
+    { title: 'About', href: '#' },
+    { title: 'Expertise', href: '#' },
+    { title: 'Team', href: '#' },
+    { title: 'Works', href: '#' },
+    { title: 'People say', href: '#' },
+    { title: 'Contacts', href: '#' }
+  ]  
+%}
+
+<nav class="nav">
+  <button class="nav__close">
+    <i class="fas fa-times"></i>
+  </button>
+
+  <ul class="nav__list">
+
+    {% for item in items %}
+    <li
+      class="nav__item {% if item.active === true%} active {% endif %}"
+    >
+      <a href="{{item.href}}" class="nav__link">
+        {{item.title}}
+      </a>
+    </li>
+    {% endfor %}
+
+  </ul>
+</nav>

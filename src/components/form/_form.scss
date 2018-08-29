@@ -1,0 +1,27 @@
+.textfield {
+  @include rem(14);
+  border: 1px solid rgba($color: #000, $alpha: .1);
+  padding: 11px 20px;
+  width: 100%;
+
+  @media screen and (max-width: 551px) {
+    font-size: 16px;
+  }
+
+  @include placeholder {
+    color: rgba($color: #6a6671, $alpha: .5);
+    @include rem(14);
+    font-weight: 300;
+  }
+}
+
+.form__message {
+  height: 200px;
+  resize: none;
+}
+
+.form__item {
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+}

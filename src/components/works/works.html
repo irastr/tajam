@@ -1,0 +1,34 @@
+{%
+  set galleryItems = [
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe4_ZU32F_wfCkUgPvOKbhKHjKLofHUtT2EvCHGTXo1zh6IaG9_Q',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe4_ZU32F_wfCkUgPvOKbhKHjKLofHUtT2EvCHGTXo1zh6IaG9_Q',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe4_ZU32F_wfCkUgPvOKbhKHjKLofHUtT2EvCHGTXo1zh6IaG9_Q',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe4_ZU32F_wfCkUgPvOKbhKHjKLofHUtT2EvCHGTXo1zh6IaG9_Q',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe4_ZU32F_wfCkUgPvOKbhKHjKLofHUtT2EvCHGTXo1zh6IaG9_Q',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe4_ZU32F_wfCkUgPvOKbhKHjKLofHUtT2EvCHGTXo1zh6IaG9_Q',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe4_ZU32F_wfCkUgPvOKbhKHjKLofHUtT2EvCHGTXo1zh6IaG9_Q',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe4_ZU32F_wfCkUgPvOKbhKHjKLofHUtT2EvCHGTXo1zh6IaG9_Q',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe4_ZU32F_wfCkUgPvOKbhKHjKLofHUtT2EvCHGTXo1zh6IaG9_Q',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe4_ZU32F_wfCkUgPvOKbhKHjKLofHUtT2EvCHGTXo1zh6IaG9_Q',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe4_ZU32F_wfCkUgPvOKbhKHjKLofHUtT2EvCHGTXo1zh6IaG9_Q',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe4_ZU32F_wfCkUgPvOKbhKHjKLofHUtT2EvCHGTXo1zh6IaG9_Q',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe4_ZU32F_wfCkUgPvOKbhKHjKLofHUtT2EvCHGTXo1zh6IaG9_Q'
+  ]
+%}
+
+
+<section class="works">
+  <div class="row no-gutters">
+    {% for item in galleryItems %}
+    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12">
+      <a
+        href="{{item}}"
+        class="works__item"
+        style="background-image: url('{{item}}')"
+      >
+        <img src="{{item}}">
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</section>

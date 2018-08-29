@@ -1,0 +1,27 @@
+.about {
+  width: 100%;
+  background-color: #fff;
+  padding: 70px 0;
+}
+
+.about__img {
+  max-width: 235px;
+  max-height: 230px;
+}
+
+.about__title {
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #403d4b;
+
+  @include rem(22);
+}
+
+
+.about__descr {
+  color: #403d4b;
+  font-weight: 300;
+
+  @include rem(14);
+}

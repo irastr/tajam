@@ -1,0 +1,66 @@
+{% import 'components/utils/section-header/section-header.html' as header %}
+{%
+  set items = [
+  {
+      iconPath: 'img/icon.png',
+      title: 'WEB DESIGN & DEVELOPMENT',
+      description: "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean."
+    },
+    {
+      iconPath: 'img/icon.png',
+      title: 'WEB DESIGN & DEVELOPMENT',
+      description: "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean."
+    },
+    {
+      iconPath: 'img/icon.png',
+      title: 'WEB DESIGN & DEVELOPMENT',
+      description: "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean."
+    },
+    {
+      iconPath: 'img/icon.png',
+      title: 'WEB DESIGN & DEVELOPMENT',
+      description: "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean."
+    },
+    {
+      iconPath: 'img/icon.png',
+      title: 'WEB DESIGN & DEVELOPMENT',
+      description: "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean."
+    },
+    {
+      iconPath: 'img/icon.png',
+      title: 'WEB DESIGN & DEVELOPMENT',
+      description: "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean."
+    },
+    {
+      iconPath: 'img/icon.png',
+      title: 'WEB DESIGN & DEVELOPMENT',
+      description: "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean."
+    }
+  ]
+%}
+<section class="expertise section">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        {{ header.sectionHeader('expertise', 'Lorem ipsum dolor sit amet proin gravida nibh vel velit', 'black') }}
+      </div>
+    </div>
+
+    <div class="expertise__card-wrap">
+      <div class="row no-gutters">
+        {% for item in items %}
+        <div class="col-xl-4">
+          <div class="expertise__item">
+            <span class="expertise__icon-wrap">
+              <img src="{{ item.iconPath }}" alt="icon" class="expertise__icon">
+            </span>
+            <h3 class="expertise__title">{{ item.title }}</h3>
+            <p class="expertise__descr">{{ item.description }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+</section>

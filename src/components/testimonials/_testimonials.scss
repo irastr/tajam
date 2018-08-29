@@ -1,0 +1,101 @@
+.testimonials {
+  @include background('../img/hero.jpg');
+}
+
+.testimonials__slider {
+  position: relative;
+  z-index: 99;
+}
+
+.testimonials__slider-list {
+  list-style: none;
+  padding: 0;
+}
+
+.testimonials__slider-item {
+  text-align: center;
+  color: $text-white;
+  position: relative;
+  padding-top: 65px;
+}
+
+.testimonials__slider-quote {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  font-size: 36px;
+}
+
+.testimonials__slider-descr {
+  @include rem(16);
+  font-family: 'Playfair Display', serif;
+  line-height: 26px;
+  margin-bottom: 40px;
+}
+
+.testimonials__person-name {
+  text-transform: uppercase;
+  color: $text-white;
+  @include rem(14);
+  font-weight: 900;
+}
+
+.testimonials__person-position {
+  text-transform: uppercase;
+  @include rem(13);
+  color: rgba($color: $text-white, $alpha: .7);
+  font-weight: 300;
+}
+
+.testimonials__slider-nav {
+  position: relative;
+  z-index: 99;
+  width: 400px;
+  margin: 40px auto 0 auto;
+
+  @media screen and (max-width: 551px) {
+    width: 100%;
+  }
+}
+
+.testimonials__slider-nav-list {
+  padding: 0;
+}
+
+.testimonials__slider-nav img {
+  transform: scale(.7);
+  transition: transform .2s ease-in-out;
+}
+.testimonials__slider-nav .slick-center img {
+  transform: scale(1);
+}
+
+.testimonials__slider-nav-item {
+  display: flex !important;
+  justify-content: center;
+}
+
+.testimonials__slider-btn {
+  background: none;
+  padding: 0;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  color: $text-white;
+  font-size: 25px;
+  opacity: .8;
+
+  @media screen and (max-width: 451px) {
+    display: none;
+  }
+}
+
+.testimonials__slider-btn--prev {
+  left: -15px;
+}
+.testimonials__slider-btn--next {
+  right: -15px;
+}

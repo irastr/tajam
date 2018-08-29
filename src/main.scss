@@ -1,0 +1,20 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/slick-carousel/slick/slick.scss";
+@import "../node_modules/slick-carousel/slick/slick-theme.scss";
+@import "../node_modules/magnific-popup/src/css/main";
+@import "styles/vars";
+@import "styles/mixins";
+@import "styles/adjustment";
+
+@import "components/utils/section-header/section-header";
+
+@import "components/header/header";
+@import "components/header/nav/nav";
+@import "components/hero/hero";
+@import "components/logo/logo";
+@import "components/about/about";
+@import "components/video/video";
+@import "components/expertise/expertise";
+@import "components/works/works";
+@import "components/testimonials/testimonials";
+@import "components/form/form";
